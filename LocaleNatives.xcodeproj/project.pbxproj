@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC4CA8FD18A571C00072FF4F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4CA8FC18A571C00072FF4F /* Parse.framework */; };
+		DC4CA90118A57F110072FF4F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4CA90018A57F110072FF4F /* AudioToolbox.framework */; };
+		DC4CA90318A57F190072FF4F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4CA90218A57F190072FF4F /* CFNetwork.framework */; };
+		DC4CA90518A57F340072FF4F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4CA90418A57F340072FF4F /* libz.dylib */; };
+		DC4CA90718A57F3E0072FF4F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4CA90618A57F3E0072FF4F /* MobileCoreServices.framework */; };
+		DC4CA90918A57F460072FF4F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4CA90818A57F460072FF4F /* QuartzCore.framework */; };
+		DC4CA90B18A57F4F0072FF4F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4CA90A18A57F4F0072FF4F /* Security.framework */; };
+		DC4CA90D18A57F570072FF4F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4CA90C18A57F570072FF4F /* StoreKit.framework */; };
+		DC4CA90F18A57F5F0072FF4F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4CA90E18A57F5F0072FF4F /* SystemConfiguration.framework */; };
+		DCA8D1191892E57C006A5AD0 /* motionClassifier.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA8D1181892E57C006A5AD0 /* motionClassifier.m */; };
+		DCA8D1301896314A006A5AD0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA8D12F1896314A006A5AD0 /* MapKit.framework */; };
+		DCA8D1331896455D006A5AD0 /* GameInProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA8D1321896455D006A5AD0 /* GameInProgressViewController.m */; };
+		DCB27CBF189F2D840028143F /* curbStomp.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB27CBE189F2D840028143F /* curbStomp.m */; };
 		DCF362F91869C56C00611179 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF362F81869C56C00611179 /* Foundation.framework */; };
 		DCF362FB1869C56C00611179 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF362FA1869C56C00611179 /* CoreGraphics.framework */; };
 		DCF362FD1869C56C00611179 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF362FC1869C56C00611179 /* UIKit.framework */; };
@@ -14,13 +27,16 @@
 		DCF363051869C56C00611179 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF363041869C56C00611179 /* main.m */; };
 		DCF363091869C56C00611179 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF363081869C56C00611179 /* AppDelegate.m */; };
 		DCF3630C1869C56C00611179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCF3630A1869C56C00611179 /* Main.storyboard */; };
-		DCF3630F1869C56C00611179 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF3630E1869C56C00611179 /* ViewController.m */; };
+		DCF3630F1869C56C00611179 /* GameStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF3630E1869C56C00611179 /* GameStartViewController.m */; };
 		DCF363111869C56C00611179 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF363101869C56C00611179 /* Images.xcassets */; };
 		DCF363181869C56C00611179 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF363171869C56C00611179 /* XCTest.framework */; };
 		DCF363191869C56C00611179 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF362F81869C56C00611179 /* Foundation.framework */; };
 		DCF3631A1869C56C00611179 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF362FC1869C56C00611179 /* UIKit.framework */; };
 		DCF363221869C56C00611179 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCF363201869C56C00611179 /* InfoPlist.strings */; };
 		DCF363241869C56C00611179 /* LocaleNativesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF363231869C56C00611179 /* LocaleNativesTests.m */; };
+		DCF3632F186A4A4400611179 /* locationListener.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF3632E186A4A4400611179 /* locationListener.m */; };
+		DCF36332186B9EDB00611179 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF36331186B9EDB00611179 /* CoreLocation.framework */; };
+		DCF36347187312B600611179 /* coreMotionListener.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF36346187312B600611179 /* coreMotionListener.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +50,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC4CA8FC18A571C00072FF4F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../Downloads/Parse.framework; sourceTree = "<group>"; };
+		DC4CA90018A57F110072FF4F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DC4CA90218A57F190072FF4F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DC4CA90418A57F340072FF4F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DC4CA90618A57F3E0072FF4F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DC4CA90818A57F460072FF4F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DC4CA90A18A57F4F0072FF4F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DC4CA90C18A57F570072FF4F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		DC4CA90E18A57F5F0072FF4F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DCA8D1171892E57C006A5AD0 /* motionClassifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = motionClassifier.h; sourceTree = "<group>"; };
+		DCA8D1181892E57C006A5AD0 /* motionClassifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = motionClassifier.m; sourceTree = "<group>"; };
+		DCA8D12F1896314A006A5AD0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DCA8D1311896455C006A5AD0 /* GameInProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameInProgressViewController.h; sourceTree = "<group>"; };
+		DCA8D1321896455D006A5AD0 /* GameInProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameInProgressViewController.m; sourceTree = "<group>"; };
+		DCB27CBD189F2D840028143F /* curbStomp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curbStomp.h; sourceTree = "<group>"; };
+		DCB27CBE189F2D840028143F /* curbStomp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = curbStomp.m; sourceTree = "<group>"; };
 		DCF362F51869C56C00611179 /* LocaleNatives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocaleNatives.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF362F81869C56C00611179 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCF362FA1869C56C00611179 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +77,19 @@
 		DCF363071869C56C00611179 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DCF363081869C56C00611179 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DCF3630B1869C56C00611179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DCF3630D1869C56C00611179 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DCF3630E1869C56C00611179 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DCF3630D1869C56C00611179 /* GameStartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameStartViewController.h; sourceTree = "<group>"; };
+		DCF3630E1869C56C00611179 /* GameStartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameStartViewController.m; sourceTree = "<group>"; };
 		DCF363101869C56C00611179 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DCF363161869C56C00611179 /* LocaleNativesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocaleNativesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF363171869C56C00611179 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DCF3631F1869C56C00611179 /* LocaleNativesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocaleNativesTests-Info.plist"; sourceTree = "<group>"; };
 		DCF363211869C56C00611179 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DCF363231869C56C00611179 /* LocaleNativesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocaleNativesTests.m; sourceTree = "<group>"; };
+		DCF3632D186A4A4400611179 /* locationListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = locationListener.h; path = Model/locationListener.h; sourceTree = "<group>"; };
+		DCF3632E186A4A4400611179 /* locationListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = locationListener.m; path = Model/locationListener.m; sourceTree = "<group>"; };
+		DCF36331186B9EDB00611179 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DCF36345187312B600611179 /* coreMotionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coreMotionListener.h; path = Model/coreMotionListener.h; sourceTree = "<group>"; };
+		DCF36346187312B600611179 /* coreMotionListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = coreMotionListener.m; path = Model/coreMotionListener.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +97,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4CA90F18A57F5F0072FF4F /* SystemConfiguration.framework in Frameworks */,
+				DC4CA90D18A57F570072FF4F /* StoreKit.framework in Frameworks */,
+				DC4CA90B18A57F4F0072FF4F /* Security.framework in Frameworks */,
+				DC4CA90918A57F460072FF4F /* QuartzCore.framework in Frameworks */,
+				DC4CA90718A57F3E0072FF4F /* MobileCoreServices.framework in Frameworks */,
+				DC4CA90518A57F340072FF4F /* libz.dylib in Frameworks */,
+				DCF36332186B9EDB00611179 /* CoreLocation.framework in Frameworks */,
 				DCF362FB1869C56C00611179 /* CoreGraphics.framework in Frameworks */,
+				DC4CA90318A57F190072FF4F /* CFNetwork.framework in Frameworks */,
+				DC4CA90118A57F110072FF4F /* AudioToolbox.framework in Frameworks */,
+				DCA8D1301896314A006A5AD0 /* MapKit.framework in Frameworks */,
 				DCF362FD1869C56C00611179 /* UIKit.framework in Frameworks */,
+				DC4CA8FD18A571C00072FF4F /* Parse.framework in Frameworks */,
 				DCF362F91869C56C00611179 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +127,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DCA8D11D18931F1E006A5AD0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DCF3630D1869C56C00611179 /* GameStartViewController.h */,
+				DCF3630E1869C56C00611179 /* GameStartViewController.m */,
+				DCA8D1311896455C006A5AD0 /* GameInProgressViewController.h */,
+				DCA8D1321896455D006A5AD0 /* GameInProgressViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		DCF362EC1869C56C00611179 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +160,17 @@
 		DCF362F71869C56C00611179 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC4CA90E18A57F5F0072FF4F /* SystemConfiguration.framework */,
+				DC4CA90C18A57F570072FF4F /* StoreKit.framework */,
+				DC4CA90A18A57F4F0072FF4F /* Security.framework */,
+				DC4CA90818A57F460072FF4F /* QuartzCore.framework */,
+				DC4CA90618A57F3E0072FF4F /* MobileCoreServices.framework */,
+				DC4CA90418A57F340072FF4F /* libz.dylib */,
+				DC4CA90218A57F190072FF4F /* CFNetwork.framework */,
+				DC4CA90018A57F110072FF4F /* AudioToolbox.framework */,
+				DC4CA8FC18A571C00072FF4F /* Parse.framework */,
+				DCA8D12F1896314A006A5AD0 /* MapKit.framework */,
+				DCF36331186B9EDB00611179 /* CoreLocation.framework */,
 				DCF362F81869C56C00611179 /* Foundation.framework */,
 				DCF362FA1869C56C00611179 /* CoreGraphics.framework */,
 				DCF362FC1869C56C00611179 /* UIKit.framework */,
@@ -112,11 +182,11 @@
 		DCF362FE1869C56C00611179 /* LocaleNatives */ = {
 			isa = PBXGroup;
 			children = (
+				DCF36330186A4A4E00611179 /* Model */,
 				DCF363071869C56C00611179 /* AppDelegate.h */,
 				DCF363081869C56C00611179 /* AppDelegate.m */,
 				DCF3630A1869C56C00611179 /* Main.storyboard */,
-				DCF3630D1869C56C00611179 /* ViewController.h */,
-				DCF3630E1869C56C00611179 /* ViewController.m */,
+				DCA8D11D18931F1E006A5AD0 /* Controllers */,
 				DCF363101869C56C00611179 /* Images.xcassets */,
 				DCF362FF1869C56C00611179 /* Supporting Files */,
 			);
@@ -150,6 +220,21 @@
 				DCF363201869C56C00611179 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCF36330186A4A4E00611179 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCF3632D186A4A4400611179 /* locationListener.h */,
+				DCF3632E186A4A4400611179 /* locationListener.m */,
+				DCF36345187312B600611179 /* coreMotionListener.h */,
+				DCF36346187312B600611179 /* coreMotionListener.m */,
+				DCA8D1171892E57C006A5AD0 /* motionClassifier.h */,
+				DCA8D1181892E57C006A5AD0 /* motionClassifier.m */,
+				DCB27CBD189F2D840028143F /* curbStomp.h */,
+				DCB27CBE189F2D840028143F /* curbStomp.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +284,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Stephen Chan";
 				TargetAttributes = {
+					DCF362F41869C56C00611179 = {
+						DevelopmentTeam = W4E2C6X642;
+					};
 					DCF363151869C56C00611179 = {
 						TestTargetID = DCF362F41869C56C00611179;
 					};
@@ -249,8 +337,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF3630F1869C56C00611179 /* ViewController.m in Sources */,
+				DCA8D1191892E57C006A5AD0 /* motionClassifier.m in Sources */,
+				DCF3632F186A4A4400611179 /* locationListener.m in Sources */,
+				DCF3630F1869C56C00611179 /* GameStartViewController.m in Sources */,
 				DCF363091869C56C00611179 /* AppDelegate.m in Sources */,
+				DCF36347187312B600611179 /* coreMotionListener.m in Sources */,
+				DCB27CBF189F2D840028143F /* curbStomp.m in Sources */,
+				DCA8D1331896455D006A5AD0 /* GameInProgressViewController.m in Sources */,
 				DCF363051869C56C00611179 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,7 +411,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Megan Everett (U3R99S3S4W)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -357,7 +450,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Megan Everett (U3R99S3S4W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Megan Everett (U3R99S3S4W)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -378,10 +472,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Megan Everett (U3R99S3S4W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/stephen/Downloads,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocaleNatives/LocaleNatives-Prefix.pch";
 				INFOPLIST_FILE = "LocaleNatives/LocaleNatives-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "41CA9B97-E3AA-43F5-9589-7A0A026CAED2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,10 +492,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Megan Everett (U3R99S3S4W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Megan Everett (U3R99S3S4W)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/stephen/Downloads,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocaleNatives/LocaleNatives-Prefix.pch";
 				INFOPLIST_FILE = "LocaleNatives/LocaleNatives-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "41CA9B97-E3AA-43F5-9589-7A0A026CAED2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -460,6 +568,7 @@
 				DCF363291869C56C00611179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCF3632A1869C56C00611179 /* Build configuration list for PBXNativeTarget "LocaleNativesTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +577,7 @@
 				DCF3632C1869C56C00611179 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
