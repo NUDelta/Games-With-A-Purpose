@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "motionClassifier.h"
+#import <MapKit/MapKit.h>
 
-@interface GameInProgressViewController : UIViewController <motionClassifierDelegate>
+@interface GameInProgressViewController : UIViewController <motionClassifierDelegate, MKMapViewDelegate>
 
 @property (strong, nonatomic) motionClassifier *classifier;
 @property (strong, nonatomic) NSString *action;

@@ -7,10 +7,11 @@
 //
 
 #import "GameInProgressViewController.h"
+#import "locationListener.h"
 
 @interface GameInProgressViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *activityDetectedLabel;
-
+@property (strong, nonatomic) IBOutlet MKMapView *gameMap;
 
 @end
 
@@ -20,14 +21,15 @@
 {
     self.action = action;
     [NSThread detachNewThreadSelector:@selector(displayAlert) toTarget:self withObject:nil];
-    //NSLog(@"registered action");
 }
 
 - (void)displayAlert
 {
-    //UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:self.action delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
-    //[alert show];
     self.activityDetectedLabel.text = self.action;
+    MKPointAnnotation *currentLocationPin = [[MKPointAnnotation alloc] init];
+    [currentLocationPin setCoordinate:self.classifier.location.locationManager.location.coordinate];
+    [currentLocationPin setTitle:@"Jump"];
+    [self.gameMap addAnnotation:currentLocationPin];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -59,7 +61,8 @@
         [self.classifier.motionListener collectMotionInformationWithInterval:100];
         [self.classifier startClassifyingMotion];
     }
-    
+
+    [self initializeMap];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -67,6 +70,12 @@
     [self.classifier.motionListener stopCollectingMotionInformation];
     [self.classifier stopClassifyingMotion];
     [super viewWillDisappear:animated];
+}
+
+- (void)initializeMap
+{
+    [self.gameMap setRegion:MKCoordinateRegionMakeWithDistance(self.classifier.location.locationManager.location.coordinate, 500, 500) animated:NO];
+    self.gameMap.showsUserLocation = YES;
 }
 
 @end

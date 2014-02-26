@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreMotion/CoreMotion.h>
 #import "coreMotionListener.h"
+#import "locationListener.h"
+#import <AVFoundation/AVFoundation.h>
 
 @class motionClassifier;
 
@@ -23,6 +25,8 @@
 @property (nonatomic, weak) id <motionClassifierDelegate> delegate;
 @property (strong, nonatomic) NSNumber *measurementInterval;
 @property (strong, nonatomic)coreMotionListener *motionListener;
+@property (strong, nonatomic) locationListener *location;
+@property (strong, nonatomic) AVAudioRecorder *recorder;
 
 - (void)motionMeasurementsToString;
 - (void)classifyMotionWithDeviceMotion;

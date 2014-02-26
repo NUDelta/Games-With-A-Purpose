@@ -43,8 +43,7 @@
 {
     static int INDOORS = 1;
     static int OUTDOORS = 0;
-    if (motion == UIEventSubtypeMotionShake)
-    {
+    if (motion == UIEventSubtypeMotionShake) {
         NSLog(@"shake!");
         if (self.gameLocationControl.selectedSegmentIndex == OUTDOORS) {
             self.gameInstructionMessage.text = self.curbStompGame.gameInstructions;
