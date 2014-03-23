@@ -14,6 +14,7 @@
 @protocol coreMotionListenerDelegate <NSObject>
 
 - (void)motionListener:(coreMotionListener *)listener didReceiveDeviceMotion:(CMDeviceMotion *)deviceMotion;
+//- (void)motionListener:(coreMotionListener *)listener didReceiveAccelerometerData:(CMAccelerometerData *)data;
 
 @end
 
@@ -22,6 +23,7 @@
 @property (strong, nonatomic) CMMotionManager *motionManager;
 @property (strong, nonatomic) id <coreMotionListenerDelegate> delegate;
 @property (strong, readonly) NSMutableArray *deviceMotionArray;
+
 
 -(void)collectMotionInformationWithInterval:(NSUInteger)interval;
 -(void)stopCollectingMotionInformation;

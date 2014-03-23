@@ -14,12 +14,20 @@
 		DC4CA90718A57F3E0072FF4F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4CA90618A57F3E0072FF4F /* MobileCoreServices.framework */; };
 		DC4CA90918A57F460072FF4F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4CA90818A57F460072FF4F /* QuartzCore.framework */; };
 		DC4CA90B18A57F4F0072FF4F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4CA90A18A57F4F0072FF4F /* Security.framework */; };
-		DC4CA90D18A57F570072FF4F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4CA90C18A57F570072FF4F /* StoreKit.framework */; };
 		DC4CA90F18A57F5F0072FF4F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4CA90E18A57F5F0072FF4F /* SystemConfiguration.framework */; };
+		DC5453F018D95C30002F10B1 /* TemplateSaver.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5453EF18D95C30002F10B1 /* TemplateSaver.m */; };
+		DC5453F318DB22EC002F10B1 /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5453F218DB22EC002F10B1 /* GraphView.m */; };
+		DC5453F518DB4A13002F10B1 /* audioListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC5453F418DB4A13002F10B1 /* audioListener.cpp */; };
+		DC9501F718CA0F40005609B5 /* KnockTemplates.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC9501F618CA0F40005609B5 /* KnockTemplates.plist */; };
+		DC9501FA18CA0FE0005609B5 /* GestureTemplates.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9501F918CA0FE0005609B5 /* GestureTemplates.m */; };
+		DC9501FC18CA1824005609B5 /* JumpTemplates.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC9501FB18CA1824005609B5 /* JumpTemplates.plist */; };
 		DCA8D1191892E57C006A5AD0 /* motionClassifier.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA8D1181892E57C006A5AD0 /* motionClassifier.m */; };
 		DCA8D1301896314A006A5AD0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA8D12F1896314A006A5AD0 /* MapKit.framework */; };
 		DCA8D1331896455D006A5AD0 /* GameInProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA8D1321896455D006A5AD0 /* GameInProgressViewController.m */; };
 		DCB27CBF189F2D840028143F /* curbStomp.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB27CBE189F2D840028143F /* curbStomp.m */; };
+		DCD7FC4C18CBBF03002CCAAF /* TemplateSaverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7FC4B18CBBF03002CCAAF /* TemplateSaverViewController.m */; };
+		DCD7FC5418D0FC93002CCAAF /* WandWaverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD7FC5318D0FC93002CCAAF /* WandWaverViewController.m */; };
+		DCD7FC5618D10173002CCAAF /* FFLife1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCD7FC5518D10173002CCAAF /* FFLife1.mp3 */; };
 		DCF362F91869C56C00611179 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF362F81869C56C00611179 /* Foundation.framework */; };
 		DCF362FB1869C56C00611179 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF362FA1869C56C00611179 /* CoreGraphics.framework */; };
 		DCF362FD1869C56C00611179 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF362FC1869C56C00611179 /* UIKit.framework */; };
@@ -57,8 +65,17 @@
 		DC4CA90618A57F3E0072FF4F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		DC4CA90818A57F460072FF4F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DC4CA90A18A57F4F0072FF4F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		DC4CA90C18A57F570072FF4F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DC4CA90E18A57F5F0072FF4F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DC5453EE18D95C30002F10B1 /* TemplateSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateSaver.h; sourceTree = "<group>"; };
+		DC5453EF18D95C30002F10B1 /* TemplateSaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateSaver.m; sourceTree = "<group>"; };
+		DC5453F118DB22EC002F10B1 /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
+		DC5453F218DB22EC002F10B1 /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
+		DC5453F418DB4A13002F10B1 /* audioListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audioListener.cpp; sourceTree = "<group>"; };
+		DC5453F618DB4A27002F10B1 /* audioListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = audioListener.h; sourceTree = "<group>"; };
+		DC9501F618CA0F40005609B5 /* KnockTemplates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KnockTemplates.plist; sourceTree = "<group>"; };
+		DC9501F818CA0FE0005609B5 /* GestureTemplates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GestureTemplates.h; path = Model/GestureTemplates.h; sourceTree = "<group>"; };
+		DC9501F918CA0FE0005609B5 /* GestureTemplates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GestureTemplates.m; path = Model/GestureTemplates.m; sourceTree = "<group>"; };
+		DC9501FB18CA1824005609B5 /* JumpTemplates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = JumpTemplates.plist; sourceTree = "<group>"; };
 		DCA8D1171892E57C006A5AD0 /* motionClassifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = motionClassifier.h; sourceTree = "<group>"; };
 		DCA8D1181892E57C006A5AD0 /* motionClassifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = motionClassifier.m; sourceTree = "<group>"; };
 		DCA8D12F1896314A006A5AD0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -66,6 +83,11 @@
 		DCA8D1321896455D006A5AD0 /* GameInProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameInProgressViewController.m; sourceTree = "<group>"; };
 		DCB27CBD189F2D840028143F /* curbStomp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curbStomp.h; sourceTree = "<group>"; };
 		DCB27CBE189F2D840028143F /* curbStomp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = curbStomp.m; sourceTree = "<group>"; };
+		DCD7FC4A18CBBF03002CCAAF /* TemplateSaverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateSaverViewController.h; sourceTree = "<group>"; };
+		DCD7FC4B18CBBF03002CCAAF /* TemplateSaverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateSaverViewController.m; sourceTree = "<group>"; };
+		DCD7FC5218D0FC93002CCAAF /* WandWaverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WandWaverViewController.h; sourceTree = "<group>"; };
+		DCD7FC5318D0FC93002CCAAF /* WandWaverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WandWaverViewController.m; sourceTree = "<group>"; };
+		DCD7FC5518D10173002CCAAF /* FFLife1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FFLife1.mp3; sourceTree = "<group>"; };
 		DCF362F51869C56C00611179 /* LocaleNatives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocaleNatives.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF362F81869C56C00611179 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCF362FA1869C56C00611179 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,7 +120,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC4CA90F18A57F5F0072FF4F /* SystemConfiguration.framework in Frameworks */,
-				DC4CA90D18A57F570072FF4F /* StoreKit.framework in Frameworks */,
 				DC4CA90B18A57F4F0072FF4F /* Security.framework in Frameworks */,
 				DC4CA90918A57F460072FF4F /* QuartzCore.framework in Frameworks */,
 				DC4CA90718A57F3E0072FF4F /* MobileCoreServices.framework in Frameworks */,
@@ -134,6 +155,10 @@
 				DCF3630E1869C56C00611179 /* GameStartViewController.m */,
 				DCA8D1311896455C006A5AD0 /* GameInProgressViewController.h */,
 				DCA8D1321896455D006A5AD0 /* GameInProgressViewController.m */,
+				DCD7FC5218D0FC93002CCAAF /* WandWaverViewController.h */,
+				DCD7FC5318D0FC93002CCAAF /* WandWaverViewController.m */,
+				DCD7FC4A18CBBF03002CCAAF /* TemplateSaverViewController.h */,
+				DCD7FC4B18CBBF03002CCAAF /* TemplateSaverViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -161,7 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				DC4CA90E18A57F5F0072FF4F /* SystemConfiguration.framework */,
-				DC4CA90C18A57F570072FF4F /* StoreKit.framework */,
 				DC4CA90A18A57F4F0072FF4F /* Security.framework */,
 				DC4CA90818A57F460072FF4F /* QuartzCore.framework */,
 				DC4CA90618A57F3E0072FF4F /* MobileCoreServices.framework */,
@@ -185,7 +209,12 @@
 				DCF36330186A4A4E00611179 /* Model */,
 				DCF363071869C56C00611179 /* AppDelegate.h */,
 				DCF363081869C56C00611179 /* AppDelegate.m */,
+				DC5453F118DB22EC002F10B1 /* GraphView.h */,
+				DC5453F218DB22EC002F10B1 /* GraphView.m */,
 				DCF3630A1869C56C00611179 /* Main.storyboard */,
+				DC9501F618CA0F40005609B5 /* KnockTemplates.plist */,
+				DC9501FB18CA1824005609B5 /* JumpTemplates.plist */,
+				DCD7FC5518D10173002CCAAF /* FFLife1.mp3 */,
 				DCA8D11D18931F1E006A5AD0 /* Controllers */,
 				DCF363101869C56C00611179 /* Images.xcassets */,
 				DCF362FF1869C56C00611179 /* Supporting Files */,
@@ -233,6 +262,12 @@
 				DCA8D1181892E57C006A5AD0 /* motionClassifier.m */,
 				DCB27CBD189F2D840028143F /* curbStomp.h */,
 				DCB27CBE189F2D840028143F /* curbStomp.m */,
+				DC9501F818CA0FE0005609B5 /* GestureTemplates.h */,
+				DC9501F918CA0FE0005609B5 /* GestureTemplates.m */,
+				DC5453EE18D95C30002F10B1 /* TemplateSaver.h */,
+				DC5453EF18D95C30002F10B1 /* TemplateSaver.m */,
+				DC5453F418DB4A13002F10B1 /* audioListener.cpp */,
+				DC5453F618DB4A27002F10B1 /* audioListener.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -286,6 +321,11 @@
 				TargetAttributes = {
 					DCF362F41869C56C00611179 = {
 						DevelopmentTeam = W4E2C6X642;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					DCF363151869C56C00611179 = {
 						TestTargetID = DCF362F41869C56C00611179;
@@ -316,9 +356,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC9501FC18CA1824005609B5 /* JumpTemplates.plist in Resources */,
 				DCF363111869C56C00611179 /* Images.xcassets in Resources */,
 				DCF363031869C56C00611179 /* InfoPlist.strings in Resources */,
+				DC9501F718CA0F40005609B5 /* KnockTemplates.plist in Resources */,
 				DCF3630C1869C56C00611179 /* Main.storyboard in Resources */,
+				DCD7FC5618D10173002CCAAF /* FFLife1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,10 +383,16 @@
 				DCA8D1191892E57C006A5AD0 /* motionClassifier.m in Sources */,
 				DCF3632F186A4A4400611179 /* locationListener.m in Sources */,
 				DCF3630F1869C56C00611179 /* GameStartViewController.m in Sources */,
+				DC5453F018D95C30002F10B1 /* TemplateSaver.m in Sources */,
 				DCF363091869C56C00611179 /* AppDelegate.m in Sources */,
 				DCF36347187312B600611179 /* coreMotionListener.m in Sources */,
+				DC9501FA18CA0FE0005609B5 /* GestureTemplates.m in Sources */,
 				DCB27CBF189F2D840028143F /* curbStomp.m in Sources */,
 				DCA8D1331896455D006A5AD0 /* GameInProgressViewController.m in Sources */,
+				DCD7FC4C18CBBF03002CCAAF /* TemplateSaverViewController.m in Sources */,
+				DC5453F518DB4A13002F10B1 /* audioListener.cpp in Sources */,
+				DC5453F318DB22EC002F10B1 /* GraphView.m in Sources */,
+				DCD7FC5418D0FC93002CCAAF /* WandWaverViewController.m in Sources */,
 				DCF363051869C56C00611179 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,8 +530,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocaleNatives/LocaleNatives-Prefix.pch";
 				INFOPLIST_FILE = "LocaleNatives/LocaleNatives-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -501,8 +552,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocaleNatives/LocaleNatives-Prefix.pch";
 				INFOPLIST_FILE = "LocaleNatives/LocaleNatives-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

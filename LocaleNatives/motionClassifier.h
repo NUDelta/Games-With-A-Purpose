@@ -27,10 +27,21 @@
 @property (strong, nonatomic)coreMotionListener *motionListener;
 @property (strong, nonatomic) locationListener *location;
 @property (strong, nonatomic) AVAudioRecorder *recorder;
+@property (strong, nonatomic) NSString *motionToDetect;
+@property (strong, nonatomic) NSMutableArray *accelArrayX;
+@property (strong, nonatomic) NSMutableArray *accelArrayY;
+@property (strong, nonatomic) NSMutableArray *accelArrayZ;
 
-- (void)motionMeasurementsToString;
+@property (strong, nonatomic) NSMutableArray *micMaxPowerArray;
+@property (strong, nonatomic) NSMutableArray *micAvePowerArray;
+
 - (void)classifyMotionWithDeviceMotion;
 - (void)startClassifyingMotion;
 - (void)stopClassifyingMotion;
+- (BOOL)detectJump;
+- (BOOL)detectKnock;
+- (BOOL)detectStomp;
+- (BOOL)detectThrow;
++ (NSArray *)validMotionsToDetect;
 
 @end

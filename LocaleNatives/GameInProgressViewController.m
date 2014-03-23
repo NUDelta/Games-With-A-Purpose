@@ -10,8 +10,7 @@
 #import "locationListener.h"
 
 @interface GameInProgressViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *activityDetectedLabel;
-@property (strong, nonatomic) IBOutlet MKMapView *gameMap;
+@property (strong, nonatomic) AVAudioPlayer *player;
 
 @end
 
@@ -25,11 +24,11 @@
 
 - (void)displayAlert
 {
-    self.activityDetectedLabel.text = self.action;
+    /*self.activityDetectedLabel.text = self.action;
     MKPointAnnotation *currentLocationPin = [[MKPointAnnotation alloc] init];
     [currentLocationPin setCoordinate:self.classifier.location.locationManager.location.coordinate];
     [currentLocationPin setTitle:@"Jump"];
-    [self.gameMap addAnnotation:currentLocationPin];
+    [self.gameMap addAnnotation:currentLocationPin]; */
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -51,6 +50,14 @@
     return self;
 }
 
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (motion == UIEventSubtypeMotionShake) {
+        NSLog(@"shake!");
+        [self.player play];
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -58,11 +65,13 @@
     self.classifier.delegate = self;
     if (self.classifier) {
         NSLog(@"initialized classifier");
-        [self.classifier.motionListener collectMotionInformationWithInterval:100];
+        [self.classifier.motionListener collectMotionInformationWithInterval:20];
         [self.classifier startClassifyingMotion];
     }
-
-    [self initializeMap];
+    
+    NSString *spellSound = [[NSBundle mainBundle] pathForResource:@"FFLife1" ofType:@"mp3"];
+    NSURL *spellSoundURL   = [NSURL fileURLWithPath:spellSound];
+    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:spellSoundURL error:nil];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -70,12 +79,6 @@
     [self.classifier.motionListener stopCollectingMotionInformation];
     [self.classifier stopClassifyingMotion];
     [super viewWillDisappear:animated];
-}
-
-- (void)initializeMap
-{
-    [self.gameMap setRegion:MKCoordinateRegionMakeWithDistance(self.classifier.location.locationManager.location.coordinate, 500, 500) animated:NO];
-    self.gameMap.showsUserLocation = YES;
 }
 
 @end

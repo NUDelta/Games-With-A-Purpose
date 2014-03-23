@@ -36,14 +36,17 @@
         self.motionManager.deviceMotionUpdateInterval = intervalInMs;
         
         [self.motionManager startDeviceMotionUpdatesToQueue:self.deviceMeasurementsQueue withHandler:^(CMDeviceMotion *deviceMeasurementData, NSError *error){
-            CMDeviceMotion *deviceMotion = _motionManager.deviceMotion;
-            [self.deviceMotionArray addObject:deviceMotion];
-            if ([self.deviceMotionArray count] > 100) {
+            /*CMDeviceMotion *deviceMotion = _motionManager.deviceMotion;
+            //[self.deviceMotionArray addObject:deviceMotion];
+            if ([self.deviceMotionArray count] > 500) {
                 [self.deviceMotionArray removeObjectAtIndex:0];
-            }
-            [self.delegate motionListener:self didReceiveDeviceMotion:deviceMotion];
+            } */
+            [self.delegate motionListener:self didReceiveDeviceMotion:deviceMeasurementData];
             //NSLog(@"%@", deviceMotion);
         }];
+        /*[self.motionManager startAccelerometerUpdatesToQueue:self.deviceMeasurementsQueue withHandler:^(CMAccelerometerData *data, NSError *error) {
+            [self.delegate motionListener:self didReceiveAccelerometerData:data];
+        }]; */
     }
 }
 
